@@ -1,0 +1,4 @@
+baseURL = 'https://photo.too-many-machines.com/'
+languageCode = 'en'
+title = 'Photo'
+theme = 'gallery'

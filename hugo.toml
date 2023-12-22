@@ -2,3 +2,34 @@ baseURL = 'https://photo.too-many-machines.com/'
 languageCode = 'en'
 title = 'Photo'
 theme = 'gallery'
+copyright = "© Igor Wawrzyniak"
+disableKinds = ["taxonomy", "term"]
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+timeZone = "Europe/London"
+
+
+[params]
+  title = "Photo"
+  defaultTheme = "dark"
+
+[author]
+  name = "Igor Wawrzyniak"
+
+[outputs]
+  page = ["HTML"]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+
+[imaging]
+  resampleFilter = "CatmullRom"
+  quality = 75
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.112.0"

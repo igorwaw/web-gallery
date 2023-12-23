@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class=" h-full"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Photo</title>
+  <link rel="canonical" href="https://photo.too-many-machines.com/" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin="anonymous" integrity="sha256-ive9W1RVZ63/s9/Otb7bNTpSLXvxs6K4r3tgZBVrq8A=" />
+  <meta name="description" content="Can&#39;t say I travelled much. But I lived in 3 countries, visited some others for business or pleasure and I always carry a camera, so I gathered a small collection of travel photos." />
+  <meta name="generator" content="Hugo 0.120.4">
+  
+  <link rel="alternate" type="application/rss+xml" href="https://photo.too-many-machines.com/index.xml" title="Photo" />
+  <meta property="og:title" content="" />
+<meta property="og:description" content="Can&#39;t say I travelled much. But I lived in 3 countries, visited some others for business or pleasure and I always carry a camera, so I gathered a small collection of travel photos." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://photo.too-many-machines.com/" />
+
+  
+<link rel="stylesheet" href="/css/compiled/styles.min.dac4e1b2006517686ad1244bc5feb51cf8eae6805d078d97fca575e54e9229bf.css" />
+  
+  <script src="/js/main.d29b83bef51e0c01886b583d0a03d2f789fc1fc37420e921ae7b9d50e643aa37.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"  charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+  <script src="jquery.mapael.js" charset="utf-8"></script>
+  <script src="maps/world_countries.js" charset="utf-8"></script>
+  
+  
+  <script type="text/javascript">
+$(function () {
+    $("#map-container").mapael({
+        map: {
+            name: "world_countries",
+            zoom: {
+                        enabled: true,
+                        init: {
+                            latitude: 40,
+                            longitude: 10,
+                            level: 7
+                        }
+                    }
+                    , defaultArea: {
+                        attrs: {
+                            fill: "#f4f4e8"
+                            , stroke: "#ced8d0"
+                        }
+                        , attrsHover: {
+                            fill: "#a4e100"
+                        }
+                        , text: {
+                            attrs: {
+                                fill: "#505444"
+                            }
+                            , attrsHover: {
+                                fill: "#000"
+                            }
+                        }
+                    }
+        },
+        areas: {
+            // Define the actions for each country
+            "AT": {
+                tooltip: { content: "Austria" },
+                attrs: { fill: "#484802"  },
+                href: "/austria" // Specify the URL to redirect to
+            },
+            "IE": {
+                tooltip: { content: "Ireland" },
+                attrs: { fill: "#484802"  },
+                href: "/ireland" // Specify the URL to redirect to
+            },
+            "PL": {
+                tooltip: { content: "Poland" },
+                attrs: { fill: "#484802"  },
+                href: "/poland" // Specify the URL to redirect to
+            },
+            "LT": {
+                tooltip: { content: "Lithuania" },
+                attrs: { fill: "#484802"  },
+                href: "/lithuania" // Specify the URL to redirect to
+            },
+            "BE": {
+                tooltip: { content: "Belgium" },
+                attrs: { fill: "#484802"  },
+                href: "/belgium" // Specify the URL to redirect to
+            },
+
+        }
+    });
+});
+
+  </script>
+</head>
+
+<body class="flex min-h-full flex-col bg-white text-neutral-900 antialiased dark:bg-black dark:text-neutral-100">
+    <header class="w-full">
+    <div class="mx-auto flex max-w-screen-3xl flex-wrap justify-between px-6" x-data="{ expanded: false }">
+    <div class="flex h-16 w-full justify-between">
+      
+      
+        <a class="inline-flex items-center py-4 text-xl font-medium dark:text-neutral-100" href="/">
+          Photo
+        </a>
+      
+
+
+      <button @click="expanded = !expanded" type="button" class="group -me-4 ml-3 inline-flex items-center p-3 text-sm dark:text-neutral-100" title="Albums">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!expanded">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-cloak="x-cloak" x-show="expanded">
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+    </div>
+
+</header>
+<main class="mx-auto w-full max-w-screen-3xl grow">
+  <div class="mx-auto mb-16 mt-9 max-w-screen-lg px-6 text-center">
+    <h1 class="text-3xl font-semibold md:text-4xl">Photos</h1>
+    
+      <p class="mt-6 text-neutral-500 dark:text-neutral-400 md:text-lg">Can&#39;t say I travelled much. But I lived in 3 countries, visited some others for business or pleasure and I always carry a camera, so I gathered a small collection of travel photos.</p>
+    
+  </div>
+
+  
+  <div id="map-container"> 
+    <div class="map">
+    alternative content 
+</div>
+</div>
+
+    
+  
+
+    </main><footer class="mx-auto mb-10 mt-4 flex max-w-screen-3xl flex-none flex-wrap justify-center px-6 text-center text-sm text-neutral-600 dark:text-neutral-400">
+  <span class="m-2"></span>
+
+  
+</footer>
+</body>
+</html>

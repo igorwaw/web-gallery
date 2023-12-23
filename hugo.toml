@@ -33,3 +33,25 @@ timeZone = "Europe/London"
   [module.hugoVersion]
     extended = false
     min = "0.112.0"
+
+[menu]
+[[menu.footer]]
+  name = 'Photo'
+  url = '/'
+  weight = 10
+[[menu.footer]]
+  name = 'Too Many Machines'
+  url = 'https://too-many-machines.com/'
+  weight = 1
+[[menu.footer]]
+  name = 'Advent of Code'
+  url = 'https://advent.too-many-machines.com/'
+  weight = 20
+[[menu.footer]]
+  name = 'Selfhosting'
+  url = 'https://selfhosting.too-many-machines.com/'
+  weight = 30
+[[menu.main]]
+  name = 'Too Many Machines'
+  url = 'https://too-many-machines.com/'
+  weight = 100

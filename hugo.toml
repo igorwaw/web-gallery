@@ -6,15 +6,13 @@ copyright = "© Igor Wawrzyniak"
 disableKinds = ["taxonomy", "term"]
 defaultContentLanguage = "en"
 enableRobotsTXT = true
-timeZone = "Europe/London"
+timeZone = "Europe/Stockholm"
 
 
 [params]
   title = "Photo"
   defaultTheme = "dark"
-
-[author]
-  name = "Igor Wawrzyniak"
+  author.name = "Igor Wawrzyniak"
 
 [outputs]
   page = ["HTML"]
@@ -40,18 +38,22 @@ timeZone = "Europe/London"
   url = '/'
   weight = 10
 [[menu.footer]]
-  name = 'Too Many Machines'
+  name = 'Main'
   url = 'https://too-many-machines.com/'
   weight = 1
 [[menu.footer]]
-  name = 'Advent of Code'
-  url = 'https://advent.too-many-machines.com/'
-  weight = 20
-[[menu.footer]]
   name = 'Selfhosting'
   url = 'https://selfhosting.too-many-machines.com/'
-  weight = 30
+  weight = 2
+[[menu.footer]]
+  name = 'Advent of Code'
+  url = 'https://advent.too-many-machines.com/'
+  weight = 3
 [[menu.main]]
-  name = 'Too Many Machines'
-  url = 'https://too-many-machines.com/'
-  weight = 100
+  name = 'Easy-DYI'
+  url = 'https://easy-dyi.too-many-machines.com/'
+  weight = 4
+[[menu.main]]
+  name = 'Random Stuff'
+  url = 'https://easy-dyi.too-many-machines.com/'
+  weight = 5

@@ -11,10 +11,11 @@ $(function () {
             name: "world_countries",
             zoom: {
                         enabled: true,
+                        maxLevel: 15,
                         init: {
-                            latitude: 45,
-                            longitude: 10,
-                            level: 10
+                            latitude: 50.5,
+                            longitude: 11,
+                            level: 13
                         },
                     },
                     defaultArea: {

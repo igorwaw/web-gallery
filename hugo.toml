@@ -1,5 +1,5 @@
 baseURL = 'https://photo.too-many-machines.com/'
-languageCode = 'en'
+locale = 'en'
 title = 'Photo'
 theme = 'gallery'
 copyright = "© Igor Wawrzyniak"
@@ -55,5 +55,5 @@ timeZone = "Europe/Stockholm"
   weight = 4
 [[menu.main]]
   name = 'Random Stuff'
-  url = 'https://easy-dyi.too-many-machines.com/'
+  url = 'https://random.too-many-machines.com/'
   weight = 5

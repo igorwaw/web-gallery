@@ -1,3 +1,3 @@
 #!/bin/sh
 
-hugo && rsync -va -e ssh public/ mikrus:/var/www/html/
+hugo && rsync -va --delete -e ssh public/ mikrus:/var/www/html/

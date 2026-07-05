@@ -37,12 +37,12 @@
   }}
   {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" true "params" $params) | resources.Fingerprint }}
   <script src="{{ $js.RelPermalink }}" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.2.2/jquery.mousewheel.min.js" integrity="sha512-xVQ08GKxlfI2OdYe63zNcmSB9gj+xykxnLQl6Og/N30YcMe+WVs3Oxt1+MjGbhsDUnSCAblUWSkzEV/cCqTJQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js" integrity="sha512-tBzZQxySO5q5lqwLWfu8Q+o4VkTcRGOeQGVQ0ueJga4A1RKuzmAu5HXDOXLEjpbKyV7ow9ympVoa6wZLEzRzDg==" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8"></script>
-  <script src="jquery.mapael.min.js" charset="utf-8"></script>
-  <script src="maps/world_countries.min.js" charset="utf-8"></script>
-  <script src="map.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.2.2/jquery.mousewheel.min.js" integrity="sha512-xVQ08GKxlfI2OdYe63zNcmSB9gj+xykxnLQl6Og/N30YcMe+WVs3Oxt1+MjGbhsDUnSCAblUWSkzEV/cCqTJQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js" integrity="sha512-tBzZQxySO5q5lqwLWfu8Q+o4VkTcRGOeQGVQ0ueJga4A1RKuzmAu5HXDOXLEjpbKyV7ow9ympVoa6wZLEzRzDg==" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" defer></script>
+  <script src="{{ "jquery.mapael.min.js" | relURL }}" charset="utf-8" defer></script>
+  <script src="{{ "maps/world_countries.min.js" | relURL }}" charset="utf-8" defer></script>
+  <script src="{{ "map.js" | relURL }}" charset="utf-8" defer></script>
   <script type="text/javascript">
       </script>
     

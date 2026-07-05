@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ with .Title }}{{ . }} -{{ end }} {{ .Site.Title }}</title>
   <link rel="canonical" href="{{ .Permalink }}" />
   <link rel="icon" type="image/svg+xml" href="{{ "images/favicon.svg" | relURL }}" />
@@ -43,7 +43,5 @@
   <script src="{{ "jquery.mapael.min.js" | relURL }}" charset="utf-8" defer></script>
   <script src="{{ "maps/world_countries.min.js" | relURL }}" charset="utf-8" defer></script>
   <script src="{{ "map.js" | relURL }}" charset="utf-8" defer></script>
-  <script type="text/javascript">
-      </script>
-    
+  {{- partial "head-custom.html" . -}}
 </head>
